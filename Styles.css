@@ -3,13 +3,133 @@
     margin: 0;
 }
 
-.circulo{
+.bodyVistaPantallaPrincipal{
+    margin-top: 20px;
+    display: grid;
+    grid-template-areas:
+      'menu header'
+      'menu main'
+      'menu audio'
+      'footer footer';
+    grid-template-columns: 25% 75%;
 
-    width: 50px;
-    height: 50px;
-    border: 2px solid black;
-    border-radius: 50px;
+    background-image: linear-gradient(to right, rgb(192, 225, 247), rgb(131, 211, 248));
+
+}
+
+nav{
+    width: 400px;
+    margin: 0px auto;
+   /* border: 3px black solid;*/
+
+    grid-area: menu;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.Menu{
+    padding: 33px;
+    border: 3px black solid;
+    font-size: 20px;
+    border-radius: 10px;
     text-align: center;
-    padding-top: 30px;
-    background-color: red;
+    margin: auto 0px;  
+    background-color: white;
+
+    
+}
+
+.Informacion{
+    padding: 33px;
+    border: 3px black solid;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto 0px;  
+    background-color: white;
+}
+
+.cancionRecomendada{
+    height: 200px;
+    width: 200px;
+    margin: 5px auto;
+}
+
+header{
+    display: flex;
+    grid-area: header;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    margin-bottom: 40px;
+}
+
+.usuario{
+    display: grid;
+    grid-template-areas:
+      'nombreUsuario fotoPerfil'
+      'cerrarSesion  fotoPerfil';
+    
+    margin-left: auto;
+    margin-right: 35px;
+}
+
+.nombreUsuario{
+    grid-area: nombreUsuario;
+}
+
+.cerrarSesion{
+    grid-area: cerrarSesion;
+}
+
+.fotoPerfil{
+
+    margin: auto auto auto 5px;
+
+    height: 48px;
+    width: 48px;
+    border: 3px black solid;
+    background-color: white;
+
+    grid-area: fotoPerfil;
+}
+
+.canciones{ 
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    gap: 30px;
+    grid-area: main;
+
+    align-items: center;
+    justify-items: center;
+    
+    margin-right: 35px;
+    height: 650px;
+    overflow: scroll;
+    overflow-x: hidden;
+
+}
+
+img{
+    height: 420px;
+    width: 420px; 
+
+}
+
+audio{
+    width: 1250px;
+    margin: 30px auto;
+    grid-area: audio;
+    
+}
+
+footer{
+    grid-area: footer; 
+    text-align: center;
+    font-size: 20px;
+    border: 5px black solid;
+    margin: auto 35px;
+    background-color: #fff;
 }
