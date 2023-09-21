@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.formulario{
+    display:flex;
+    flex-direction: column;
+    padding-left: 10px;
+    background-color: cadetblue;
+    align-items: center;
+}
+
+.formulario div{
+    display: flex;
+    flex-direction: column;
+    padding:10px;
+    background-color: aqua;
+}
+
+
+.segundoFormulario{
+    display: flex;
+}
+
+.formulario-item1{
+    display: flex;
+}
+
+.formulario-item2{
+    display: flex;
+}
+/*
+.formulario input{
+    width: 20%;
+    height: 40px;
+
+}*/
