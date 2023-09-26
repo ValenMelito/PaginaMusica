@@ -10,3 +10,32 @@ header{
     flex-wrap: nowrap;
     margin-bottom: 40px;
 }
+.usuario{
+    display: grid;
+    grid-template-areas:
+      'nombreUsuario fotoPerfil'
+      'cerrarSesion  fotoPerfil';
+    
+    margin-left: auto;
+    margin-right: 35px;
+}
+
+.nombreUsuario{
+    grid-area: nombreUsuario;
+}
+
+.cerrarSesion{
+    grid-area: cerrarSesion;
+}
+
+.fotoPerfil{
+
+    margin: auto auto auto 5px;
+
+    height: 48px;
+    width: 48px;
+    border: 3px black solid;
+    background-color: white;
+
+    grid-area: fotoPerfil;
+}
