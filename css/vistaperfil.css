@@ -1,1 +1,8 @@
-
+header{
+    display: flex;
+    grid-area: header;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    margin-bottom: 40px;
+}
