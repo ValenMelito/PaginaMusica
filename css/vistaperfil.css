@@ -52,12 +52,9 @@ form label{
 form {
     font-family: Arial;
     font-size: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
+    
     widht: 50%;
-    margin-left: auto;
+     margin-left: auto;
     margin-right: auto;
 }
 
