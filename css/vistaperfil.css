@@ -43,7 +43,7 @@ header{
 form label{
  width:72px;
  font-weight:bold;
- display:inline-block;
+ display:block;
 }
 form input[type="text"]{
  width:180px;
@@ -52,7 +52,7 @@ form input[type="text"]{
  border-radius:3px;
  background-color:#f6f6f6;
  margin:8px 0;
- display:inline-block;
+ display:block;
 }
 
 footer{
