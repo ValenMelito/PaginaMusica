@@ -2,28 +2,6 @@
     padding: 0;
     margin: 0;
 }
-
-.bodyVistaPerfil{
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: 25% 75%;
-
-    background: lightgray;
-
-}
-
-nav{
-    width: 400px;
-    margin: 0px auto;
-   /* border: 3px black solid;*/
-
-    grid-area: menu;
-
-    display: flex;
-    flex-direction: column;
-
-}
-
 header{
     display: flex;
     grid-area: header;
