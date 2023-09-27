@@ -47,7 +47,15 @@ form label{
 
 grid-area: form label;
 }
-
+.abs-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.form {
+    widht: 450px;
+}
 
 footer{
     grid-area: footer; 
