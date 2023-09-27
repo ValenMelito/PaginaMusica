@@ -68,7 +68,11 @@ form {
     justify-content: center;
     /* align-content: center; */
 }
-
+input[type="text"]
+input[type ="date"{
+    padding: 10px;
+    
+}
 footer{
     font-family: Arial;
     grid-area: footer; 
