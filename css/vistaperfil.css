@@ -43,7 +43,9 @@ header{
 form label{
  width:72px;
  font-weight:bold;
- display:grid;
+ display:inline-block;
+
+grid-area: form label;
 }
 form input[type="text"]{
  width:180px;
@@ -52,7 +54,8 @@ form input[type="text"]{
  border-radius:3px;
  background-color:#f6f6f6;
  margin:8px 0;
- display:grid;
+ display:inline-block;
+    grid-area: form-input;
 }
 
 footer{
