@@ -40,19 +40,14 @@ header{
 
     grid-area: fotoPerfil;
 }
+
 form label{
  width:72px;
  font-weight:bold;
  display:inline-block;
 
-grid-area: form label;
 }
-.abs-center{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-}
+
 .form {
     font-family: Arial;
     widht: 50%;
