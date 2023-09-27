@@ -48,8 +48,9 @@ form label{
 
 }
 
-form {
+.form {
     font-family: Arial;
+    padding: 0;
     widht: 50%;
     margin-left: auto;
     margin-right: auto;
