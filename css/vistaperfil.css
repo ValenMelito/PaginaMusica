@@ -54,16 +54,18 @@ grid-area: form label;
     min-height: 100vh;
 }
 .form {
+    font-family: Arial;
     widht: 50%;
     margin-left: auto;
     margin-right: auto;
 }
 
 footer{
+    font-family: Arial;
     grid-area: footer; 
     text-align: center;
     font-size: 20px;
-    border: 5px black solid;
+    border: 4px black solid;
     margin: auto 35px;
     background-color: #fff;
 }
