@@ -59,8 +59,8 @@ form {
     margin-right: auto;
 }
 button {
-    display: block;
-    justify-content : center;
+    display: flex;
+    align-items : center;
     
 }
 
