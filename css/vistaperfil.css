@@ -59,11 +59,10 @@ form {
     margin-right: auto;
 }
 .botones {
-    margin: auto 60px;
     display: flex;
-    align-content : center;
-    justify-content: space-evenly;
-    
+    align-items: flex-end;
+    justify-content: center;
+    /* align-content: center; */
 }
 
 footer{
