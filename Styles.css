@@ -37,7 +37,7 @@ nav{
     text-align: center;
     margin: auto 0px;  
     background-color: white;
-    
+    transition: 0.5s;
 }
 
 .Menu:hover{
