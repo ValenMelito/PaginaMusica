@@ -58,9 +58,10 @@ form {
      margin-left: auto;
     margin-right: auto;
 }
-button {
+.botones {
     display: flex;
-    align-items : center;
+    align-content : center;
+    justify-content: space-evenly;
     
 }
 
