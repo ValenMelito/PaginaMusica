@@ -42,14 +42,16 @@ header{
 }
 
 form label{
- width:72px;
- font-weight:bold;
- display:inline-block;
+    font-size: 20px;
+    width:72px;
+    font-weight:bold;
+    display:inline-block;
 
 }
 
 form {
     font-family: Arial;
+    font-size: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 5px;
