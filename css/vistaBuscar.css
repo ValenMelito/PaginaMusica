@@ -29,6 +29,10 @@ nav{
 
 }
 
+a {
+    text-decoration: none;
+}
+
 .Menu{
     padding: 33px;
     border: 3px black solid;
