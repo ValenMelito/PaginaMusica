@@ -71,6 +71,13 @@ form {
     justify-content: space-evenly;
     /* align-content: center; */
 }
+button{
+    width: 300px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #007bff;
+    margin: 25px;
+}
 input[type="text"],
 input[type ="date"]{
     padding: 10px;
