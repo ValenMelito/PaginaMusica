@@ -1,3 +1,10 @@
+body {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    font-family: Arial, sans-serif;
+    background-color: #e4e6e9;
+}
 .usuario{
     display: grid;
     grid-template-areas:
