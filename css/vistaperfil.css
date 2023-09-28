@@ -68,7 +68,7 @@ form {
     justify-content: center;
     /* align-content: center; */
 }
-input[type="text"]
+input[type="text"],
 input[type ="date"{
     padding: 10px;
     
