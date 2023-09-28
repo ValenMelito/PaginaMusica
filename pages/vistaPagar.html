@@ -4,26 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/vistaPagar.css">
 </head>
 
 <body>
     <nav>
         <h1>Planes premium</h1>
 
-        <div>
-
-            <h1>Nombre usuario</h1>
-            <h2><a href="">cerrar sesion</a></h2>
-            <img class="fotoPerfil" src="../imagenes/user-48.png" alt="foto de perfil del usuario">  
-        
+        <div class="usuario">
+            <h1 class="nombreUsuario"><a href="vistaPerfil.html">Nombre usuario</a></h1>
+            <h2 class="cerrarSesion"><a href="../index.html">cerrar sesion</a></h2>
+            <img class="fotoPerfil" src="../imagenes/user-48.png" alt="foto de perfil del usuario">
         </div>
         
     </nav>
 
     <br>
     
-    <div>
-        <img src="" alt="foto del plan elegido">
+    <div class="opcionElegida">
+
+        <img src="../imagenes/Tyler-the-Creator-Flower-Boy.webp" alt="foto del plan elegido">
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, nemo nisi consectetur eligendi iure, 
         sed dignissimos beatae cum et nulla tempore deleniti iste? 
         Repellat perferendis cumque necessitatibus corrupti libero omnis!</p>
@@ -59,13 +59,13 @@
 
     </form>
 
-    <div>
+    <div class="botones">
         <button>
-            <a href="../index.html">Cancelar</a><!--lleva a home otra vez-->
+            <a href="../index.html" class="botonCancelar">Cancelar</a><!--lleva a home otra vez-->
         </button>
 
         <button>
-            <a href="">Pagar</a><!--lleva a vista pagar-->
+            <a href="" class="botonPagar">Pagar</a><!--lleva a vista pagar-->
         </button>
 
     </div>
