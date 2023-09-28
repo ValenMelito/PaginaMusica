@@ -80,6 +80,7 @@ form {
 input[type="text"],
 input[type ="date"]{
     padding: 8px;
+}
 
 footer{
     grid-area: footer; 
