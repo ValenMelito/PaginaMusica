@@ -81,6 +81,11 @@ button{
 .btn {
     color: white;
 }
+.botonGuardar {
+    text-decoration: none;
+    color: #fff;
+}
+
 input[type="text"],
 input[type ="date"]{
     padding: 10px;
