@@ -80,6 +80,7 @@ button{
 }
 .btn {
     color: white;
+     text-decoration: none;
 }
 .botonGuardar {
     text-decoration: none;
