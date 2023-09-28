@@ -3,6 +3,9 @@
     margin: 0;
 }
 body {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
     font-family: Arial, sans-serif;
     background-color: #e4e6e9;
 }
@@ -65,7 +68,7 @@ form {
 .botones {
     display: flex;
     align-items: flex-end;
-    justify-content: center;
+    justify-content: space-evenly;
     /* align-content: center; */
 }
 input[type="text"],
