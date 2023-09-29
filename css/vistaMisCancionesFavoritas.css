@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cuadricula {
+  display: grid;
+  grid-template-columns: 40px 1fr 1fr 100px 40px;
+  padding: 5px;
+  background-color: rgb(79, 134, 244);
+  grid-column-gap: 2px;
+  grid-row-gap: 2px;
+  margin: 100px 200px 200px;
+}
+
+.columna-play,
+.columna-cancion,
+.columna-album,
+.columna-duracion,
+.columna-favoritos {
+  display: flex;
+  align-items: center;
+}
+
+.columna-album,
+.columna-cancion {
+  justify-content: space-between;
+}
+
+.columna-cancion a {
+  text-decoration: none;
+}
+
+.columna-cancion a:hover {
+  background-color: rgb(235, 225, 244);
+}
+
+.cuadricula > div {
+  background-color: rgb(120, 240, 240);
+  padding: 10px;
+}
+
+.item2, .item3, .item4{
+  font: bold 18px NuevaFuente
+}
+
+@font-face {
+  font-family: NuevaFuente;
+  src: url(./Fuente/NunitoSans-Italic-VariableFont_YTLC\,opsz\,wdth\,wght.ttf);
+}
+
