@@ -101,6 +101,15 @@ p{
     width: 300px;
     margin: 40px;
 }
+
+input{
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+
 img{
     width: 450px;
     height: 400px;
