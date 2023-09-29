@@ -105,8 +105,12 @@ img{
     width: 450px;
     height: 400px;
 }
+.fotoTarjetas{
+    width: 450px;
+    height: 400px;
+}
 
-img:hover{
+.fotoTarjetas:hover{
     opacity: 80%;
     width: 450px;
     height: 400px;
