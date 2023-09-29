@@ -30,8 +30,8 @@ nav{
 
 }
 
-a{
-    text-decoration:none ;
+a {
+    text-decoration: none;
 }
 
 .Menu{
@@ -43,7 +43,6 @@ a{
     margin: auto 0px;  
     background-color: white;
     transition: 0.5s;
-    
 }
 
 .Menu:hover{

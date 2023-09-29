@@ -1,0 +1,116 @@
+.usuario{
+    display: grid;
+    grid-template-areas:
+      'nombreUsuario fotoPerfil'
+      'cerrarSesion  fotoPerfil';
+    
+    margin-left: auto;
+    margin-right: 35px;
+}
+
+.nombreUsuario{
+    grid-area: nombreUsuario;
+}
+
+.cerrarSesion{
+    grid-area: cerrarSesion;
+}
+
+.fotoPerfil{
+
+    margin: auto auto auto 5px;
+
+    height: 48px;
+    width: 48px;
+    border: 3px black solid;
+    background-color: white;
+
+    grid-area: fotoPerfil;
+}
+
+.opcionElegida{
+    margin: auto;
+    width: 100vh;
+    display: flex;
+    border: 3px black solid;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: rgba(178, 187, 201, 0.42);
+    
+}
+
+.cajita{
+    margin: 30px;
+    display: grid;
+    grid-template-areas:
+        'opcionTarjeta opcionFDV'
+        'opcionCVC opcionNombreApellido';
+    justify-content: space-around;
+}
+
+.opcionTarjeta{
+    grid-area: opcionTarjeta;
+    margin-top: 30px;
+}
+
+.opcionCVC{
+    grid-area: opcionCVC;
+    margin-top: 30px;
+}
+
+.opcionFDV{
+    grid-area: opcionFDV;
+    margin-top: 30px;
+}
+
+.opcionNombreApellido{
+    grid-area: opcionNombreApellido;
+    margin-top: 30px;
+}
+
+.opcion{
+    margin: auto;
+}
+
+p{
+    width: 300px;
+    margin: 40px;
+}
+img{
+    width: 450px;
+    height: 200px;
+}
+
+.botones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.botonCancelar{
+    text-decoration: none;
+    color: #fff; 
+}
+.botonPagar{
+    text-decoration: none;
+    color: #fff;
+}
+button{
+    width: 300px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #007bff;
+    padding: 20px 100px;
+    margin: 25px;
+}
+
+footer{
+    grid-area: footer; 
+    text-align: center;
+    font-size: 20px;
+    border: 5px black solid;
+    margin: auto 35px;
+    background-color: rgba(178, 187, 201, 0.42); 
+}
