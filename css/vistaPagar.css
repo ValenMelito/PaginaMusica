@@ -1,19 +1,27 @@
 .usuario{
     display: grid;
     grid-template-areas:
-      'nombreUsuario fotoPerfil'
-      'cerrarSesion  fotoPerfil';
-    
+        'nombreUsuario fotoPerfil'
+        'cerrarSesion fotoPerfil';
     margin-left: auto;
     margin-right: 35px;
+    align-content: stretch;
+    justify-content: end;
+    justify-items: end;
 }
 
 .nombreUsuario{
     grid-area: nombreUsuario;
+    margin: auto;
 }
 
 .cerrarSesion{
     grid-area: cerrarSesion;
+    margin: auto;
+}
+
+header{
+    background-color: #e1e1e1b8;
 }
 
 .fotoPerfil{
@@ -43,6 +51,7 @@
 }
 
 .cajita{
+    font-size: 25px;
     margin: 30px;
     display: grid;
     grid-template-areas:
@@ -75,14 +84,47 @@
     margin: auto;
 }
 
+.tituloPrincipal{
+    margin: 50px;
+    color: rgba(0, 0, 0, 0.774);
+
+}
+
+.tituloPrincipal:hover{
+    margin: 50px;
+    color: rgb(0, 0, 0);
+
+}
+
 p{
+    font-size: 25px;
     width: 300px;
     margin: 40px;
 }
+
+input{
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+
 img{
     width: 450px;
-    height: 200px;
+    height: 400px;
 }
+.fotoTarjetas{
+    width: 450px;
+    height: 400px;
+}
+
+.fotoTarjetas:hover{
+    opacity: 80%;
+    width: 450px;
+    height: 400px;
+}
+
 
 .botones{
     display: flex;
@@ -98,14 +140,20 @@ img{
     color: #fff;
 }
 button{
-    width: 300px;
-    height: 60px;
+    font-size: 25px;
     border-radius: 10px;
     background-color: #007bff;
     padding: 20px 100px;
-    margin: 25px;
+    margin: 40px;
 }
 
+button:hover{
+    font-size: 25px;
+    border-radius: 10px;
+    background-color: #252a30;
+    padding: 20px 100px;
+    margin: 40px;
+}
 footer{
     grid-area: footer; 
     text-align: center;
