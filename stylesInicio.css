@@ -33,7 +33,12 @@ button {
 
 .center-text {
     text-align: center;
-    padding: auto;
+    display: flex;
+    align-content: flex-end;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    margin: 17px;
 }
 
 

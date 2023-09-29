@@ -15,6 +15,10 @@ body {
 
 }
 
+.encuadreInfo{
+    display: grid;
+}
+
 .eliminarUsuario{
 padding: 30px;
 }
@@ -70,10 +74,10 @@ header{
 
 form {
     font-family: Arial;
-    font-size: 20px;
+    font-size: 22px;
     
-    widht: 50%;
-     margin-left: auto;
+    width: 25%;
+    margin-left: auto;
     margin-right: auto;
 }
 .botones {
@@ -84,7 +88,7 @@ form {
 }
 
 button{
-    width: 300px;
+    width: 150px;
     height: 60px;
     border-radius: 10px;
     background-color: #007bff;
@@ -92,7 +96,7 @@ button{
 }
 
 button:hover{
-    width: 300px;
+    width: 150px;
     height: 60px;
     border-radius: 10px;
     margin: 25px;
@@ -122,4 +126,8 @@ footer{
     margin: 35px 35px;
     background-color: #fff;
     clear: both;
+}
+
+a{
+    font-size: 20px;
 }
