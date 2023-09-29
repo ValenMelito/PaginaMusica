@@ -107,6 +107,9 @@ header{
 
 main{
   grid-area: main;
+  height: 500px;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 
 .cuadricula {
@@ -116,7 +119,8 @@ main{
   background-color: rgb(79, 134, 244);
   grid-column-gap: 2px;
   grid-row-gap: 2px;
-  margin: 100px 200px 200px;
+  margin: 0px 20px;
+  /*margin: 100px 200px 200px;*/
 }
 
 .columna-play,
