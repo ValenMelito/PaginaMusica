@@ -9,6 +9,16 @@ body {
     font-family: Arial, sans-serif;
     background-color: #e4e6e9;
 }
+
+.caja{
+    display: grid;
+
+}
+
+.eliminarUsuario{
+padding: 30px;
+}
+
 header{
     display: flex;
     grid-area: header;
@@ -16,6 +26,7 @@ header{
     align-items: flex-end;
     flex-wrap: nowrap;
     margin-bottom: 40px;
+    margin-top: 1%;
 }
 
 .usuario{
@@ -71,6 +82,7 @@ form {
     justify-content: space-evenly;
     /* align-content: center; */
 }
+
 button{
     width: 300px;
     height: 60px;
@@ -78,10 +90,20 @@ button{
     background-color: #007bff;
     margin: 25px;
 }
+
+button:hover{
+    width: 300px;
+    height: 60px;
+    border-radius: 10px;
+    margin: 25px;
+    background: rgb(27, 27, 27);
+    ;
+}
 .btn {
     color: white;
      text-decoration: none;
 }
+
 .botonGuardar {
     text-decoration: none;
     color: #fff;
