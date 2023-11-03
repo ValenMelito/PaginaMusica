@@ -42,7 +42,7 @@ button {
 }
 
 
-.btn {
+#enviar {
     background-color: #007bff;
     color: #fff;
     padding: 9px 56px;
@@ -50,7 +50,7 @@ button {
     cursor: pointer;
 }
 
-.btn:hover {
+#enviar:hover {
     background-color: #89a1bbab;
     color: #2c2525;
     padding: 9px 56px;

@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/stylesInicio.css">
+    <script src="js/validaciones.js"></script>
     <title>Inicio</title>
 </head>
 <body>
     
     <main>
-        <form action="#" method="POST">
+        <form id="formu" action="#" method="POST">
             <fieldset>
                 <legend>Reproductor de musica</legend>
                     
@@ -23,7 +24,8 @@
 
                 <br><br>
                 <div class="center-text">
-                    <a class="btn" href="pages/vistaPantallaPrincipal.html">Iniciar sesión</a>
+                    <input id="enviar" value="Iniciar sesión" target="_parent" onclick="EnviarForm()" type="button" class="boton"/> 
+
                 </div>
                 <br><br>
                 <button>
