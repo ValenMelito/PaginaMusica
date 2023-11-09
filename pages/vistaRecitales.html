@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantalla Principal</title>
+    <link rel="stylesheet" href="../css/stylesConciertos.css">
+    <link href='../fullcalendar/core/main.css' rel='stylesheet' />
+    <link href='../fullcalendar/daygrid/main.css' rel='stylesheet' />
+    <script src='../fullcalendar/core/main.js'></script>
+    <script src='../fullcalendar/daygrid/main.js'></script>
+    <script src="../javaScript/calendario.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/slick.css"/>
+    <link rel="stylesheet" href="../css/slick-theme.css">
+</head>
+<body class="bodyVistaPantallaPrincipal">
+
+    <header>
+
+        <h1 class="titulo"><u>SPOTILAM</u></h1>
+
+        <div class="usuario">
+            <h1 class="nombreUsuario"> <a href="vistaperfil.html"> Nombre usuario</a></h1>
+            <h2 class="cerrarSesion"><a href="../index.html">cerrar sesion</a></h2>
+            <img class="fotoPerfil" src="../imagenes/user-48.png" alt="foto de perfil del usuario">
+        </div>
+        
+        
+    </header>
+    
+    <nav>
+
+        <!-- si se pone target: blanck el link se abre en otra pestaña por defecto  -->
+        <div class="Menu">
+            <a href="vistaPantallaPrincipal.html">Home </a>
+        </div>
+
+        <div class="Menu">
+            <a href="vistaBuscar.html">Buscar </a>
+        </div>
+
+        <div class="Menu">
+            <a href="vistaMisAlbumnes.html">Mis albums</a>
+        </div>
+        
+        <div class="Menu">
+            <a href=vistaMisCancionesFavoritas.html> Mis favoritos</a>
+        </div>
+
+        <div class="Menu">
+            <a href=vistaRecitales.html> Vista Recitales</a>
+        </div>
+
+        <img src="../imagenes/Tyler-the-Creator-Flower-Boy.webp" alt="album recomendado" class="cancionRecomendada">
+
+        <p class="Informacion">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Consequuntur, labore ex saepe nesciunt ab nulla cumque aspernatur facilis! Provident, magni veritatis?
+            Laboriosam exercitationem aliquam, consequuntur tempora voluptatum maiores. Iste, illum! 
+        </p>
+    </nav>
+
+    <main class="">
+            <article class="popup">
+                <h2>Nuevas funciones</h2>
+                <a id="cerrar">Cerrar</a>
+                <img src="../imagenes/61b36874ab78f_700_477!.jpg" alt="">
+            </article>
+    
+       
+        <div class="">
+            <section>
+                <article class="slider">
+                    <img src="../imagenes/coldplay-.webp" alt="">
+                    <img src="../imagenes/descarga.jpeg" alt="">
+                    <img src="../imagenes/the-beatles-video-now-and-then-.webp" alt="">
+                    <img src="../imagenes/the-beatles-video-now-and-then-1.webp" alt="">
+                </article>      
+        </section>
+        </div>
+
+        <div class="cajaDetalle">
+            <div class="columna">
+                <h3>ColdPlay</h3>
+                <p>
+Después de tanta espera, Coldplay empezó sus shows en Argentina. La banda británica sigue con sus 10 conciertos en el estadio de River Plate, en el marco de su gira mundial "Music of The Spheres World Tour".
+Producidos por DF Entertainment, los británicos concretarán de este modo un hito histórico en los shows en vivo en Argentina, al realizar la mayor cantidad de conciertos en el legendario Estadio River Plate y superar el máximo de nueve marcado por Roger Waters en su visita de 2012.
+                </p>
+            </div>
+            <div class="columna">
+                <h3>The beatles - covers</h3>
+                <p>
+                    “Antes de ir a un concierto, nos reuníamos en la tienda de discos después de que cerrara y revisábamos los estantes para ver qué nuevas cosas había ahí... 'Devil In Her Heart' y 'Money' de Barrett Strong eran temas que habíamos elegido y tocado en la tienda, y pensamos que eran interesantes”, agregó.
+                </p>
+            </div>
+        </div>
+
+        <div class="">
+            <div class="calendarioCubo">
+                <article id="calendario"></article>
+            </div>
+        </div>
+       
+
+    </main>
+
+
+    <footer>
+        Integrante 1 Azul Zapata, Integrante 2 Jeremias Medina
+        <br>
+        Integrante 3 Franco Vargas, Integrante 4 Valentin Melito
+    </footer>
+
+
+    <script type="text/javascript" src="../javaScript/vistaRecitales.js"></script>
+    <script type="text/javascript" src="../javaScript/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="../javaScript/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+		   $('.slider').slick({
+                infinite: true,
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                arrows:true,
+                dots:true
+            });
+        });
+        
+    </script>
+</body>
+</html>

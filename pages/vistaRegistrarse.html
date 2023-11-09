@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="../css/stylesInicio.css">
+</head>
+<body>
+    <main>
+        <div class="bloque">
+            <h1>Nombre usuario </h1>
+            <img class="fotoPerfil" src="../imagenes/user-48.png" alt="foto de perfil del usuario">
+        
+        </div>
+
+        <h3><a href="index.html">Iniciar sesion</a></h3>
+
+        <form action="" method="POST" onsubmit="return valida_enviar()">
+            <fieldset>
+                <legend>Registrar usuario</legend>
+                    
+                <br>
+
+                <div>
+                    <label for="usuario">Usuario</label>
+                    <input id="usuario" name="usuario"  placeholder="Nombre de usuario" type="text">
+                </div>
+                <div id="mensajeUsuario" class="error"></div> 
+
+                <br>
+                <div>
+                    <label for="contrasena">Contraseña</label>
+                    <input id="contrasena" name="contrasena" placeholder="Contraseña"placeholder="Contraseña" type="password">
+                </div>
+                <div id="mensajeContrasenia" class="error"></div>
+                <br>
+                <div>
+                    <label for="repetirContrasena">Repetir contraseña</label>
+                    <input id="repetirContrasena" name="repetirContrasena"  placeholder="Repetir contraseña" type="password">
+                </div>
+                <div id="mensajeRepetirContrasenia" class="error"></div>
+                <br>
+                <div>
+                    <label for="fechaNacimiento">Fecha de nacimiento</label>
+                    <input id="fechaNacimiento" name="fechaNacimiento" placeholder="Fecha de nacimiento" type="date">
+                </div>
+                <div id="mensajeNac" class="error"></div>
+                <br>
+                <div>
+                    <label for="email">E-mail</label>
+                    <input id="email" name="email" placeholder="E-mail" type="email">
+                </div>
+                <div id="mensajeMail" class="error"></div>
+
+                <div class="center-text">
+                    <a class="btn" href="vistaPremium.html">Premium</a>
+                    <br>
+                    <a class="btn" href="vistaRegistrarse.html">Eliminar usuario</a>
+                </div>
+                <div class="button-container">
+                    <button type="submit" class="guardar-button">Guardar</button>
+                    <br>
+                <button>
+                    <a href="../index.html">Volver al Inicio</a>
+                </button>
+                </div>
+                
+                <br><br>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        Ingresante 1 Azul Zapata, Ingresante 2 Jeremías Medina
+        <br>
+        Ingresante 3 Franco Vargas, Ingresante 4 Valentín Melito
+    </footer>
+
+    <script type="text/javascript" src="../javaScript/registroUsuario.js"></script>
+
+</body>
+</html>
