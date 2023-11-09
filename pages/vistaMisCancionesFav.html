@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Musica Sonando</title>
+  <title>Mis canciones favoritas</title>
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet"
@@ -13,12 +13,12 @@
 </head>
 <!DOCTYPE html>
 <html lang="en">
-
+  
 <body class="bodyVistaPantallaPrincipal">
 
   <header>
 
-    <h1 class="titulo"><u>Musica Sonando</u></h1>
+    <h1 class="titulo"><u>Mis canciones favoritas</u></h1>
 
     <div class="usuario">
       <h1 class="nombreUsuario"> <a href="vistaperfil.html"> Nombre usuario</a></h1>
@@ -42,7 +42,7 @@
     </div>
 
     <div class="Menu">
-      <a href="vistaMisCancionesFav.html"> Mis favoritos</a>
+      <a href=vistaMisCancionesFavoritas.html> Mis favoritos</a>
     </div>
 
 
@@ -55,16 +55,23 @@
     </p>
   </nav>
 
-
-
   <main class="canciones">
     <div id="cuadricula">
       
       <!--el contenido de la primera fila-->
       <div class="columna-play"></div>
-      <div class="item2">Canción</div>
-      <div class="item3">Álbum</div>
-      <div class="item4">Duración</div>
+      <div class="item2">
+        <span>Canción</span>
+        <span class="ordenamiento">▼</span>
+      </div>
+      <div class="item3">
+        <span>Álbum</span>
+        <span class="ordenamiento">▼</span>
+      </div>
+      <div class="item4">
+        <span>Duración</span>
+        <span class="ordenamiento">▼</span>
+      </div>
       <div class="columna-favoritos"></div>
     
       <!--se va actualizando automaticamente -->
@@ -80,10 +87,9 @@
     <br>
     Integrante 3 Franco Vargas, Integrante 4 Valentin Melito
   </footer>
-
-  <script src="../js/favoritos.js"></script>
-  <script>cargarGrilla()</script>
-
+  
+<script src="../js/favoritos.js"></script>
+<script>cargarGrilla()</script>
 </body>
 
 </html>

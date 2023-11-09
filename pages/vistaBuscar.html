@@ -11,7 +11,7 @@
 
         <div class="barraBusqueda">
             <img src="../imagenes/search-13-48.png" alt="iconoLupa" class="iconoLupa">
-            <input class="titulo" type="text" placeholder="buscar"></div> 
+            <input id="titulo" type="text" placeholder="buscar"></div> 
         </div>
             
        
@@ -38,10 +38,10 @@
         </div>
         
         <div class="Menu">
-            <a href=vistaMisCancionesFavoritas.html> Mis favoritos</a>
+            <a href="vistaMisCancionesFav.html"> Mis favoritos</a>
         </div>
 
-        <img src="../imagenes/Tyler-the-Creator-Flower-Boy.webp" alt="album recomendado" class="cancionRecomendada">
+        <img src="../imagenes/TylertheCreatorFlowerBoy.webp" alt="album recomendado" class="cancionRecomendada">
 
         <p class="Informacion">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -50,53 +50,73 @@
         </p>
     </nav>
 
-    <header>
 
-        <div class="barraBusqueda">
-            <img src="../imagenes/search-13-48.png" alt="iconoLupa" class="iconoLupa">
-            <input class="titulo" type="text" placeholder="buscar"></div> 
-        </div>
-            
-       
-
-        <div class="usuario">
-            <h1 class="nombreUsuario">Nombre usuario</h1>
-            <h2 class="cerrarSesion"><a href="../index.html">cerrar sesion</a></h2>
-            <img class="fotoPerfil" src="../imagenes/user-48.png" alt="foto de perfil del usuario">
-        </div>
-        
-    </header>
-
-
-    <main class="canciones">
+    <main id="canciones">
     
         <!-- primera fila-->
+        <div class="contenedor">
+            <img class="estrella" src="../imagenes/star-4-48.png" alt="estrella vacia" data-estado="apagada">
+            <img class="imagen" src="../imagenes/TylertheCreatorFlowerBoy.webp" alt="foto portada cancion" 
+            data-cancion='{"id":2, "nombreCancion":"a boy whit a gun", "nombreAlbum":"Flower Boy", "duracionSeg":300, "src":"../imagenes/TylertheCreatorFlowerBoy.webp"}'>
+        </div>
 
-        <img src="../imagenes/Tyler-the-Creator-Flower-Boy.webp" alt="foto portada cancion">
-        <img src="../imagenes/abbey Road.jpg" alt="foto portada cancion">
-        <img src="../imagenes/Taylor_Swift_-_1989_(Taylor's_Version).png" alt="foto portada cancion">
-
+        <div class="contenedor">
+            <img class="estrella" src="../imagenes/star-4-48.png" alt="estrella vacia" data-estado="apagada">
+            <img class="imagen" src="../imagenes/abbeyRoad.jpg" alt="foto portada cancion"
+            data-cancion='{"id":3, "nombreCancion":"abbey Road", "nombreAlbum":"the beatles", "duracionSeg":255, "src":"../imagenes/abbeyRoad.jpg"}'>
+        </div>
+        
+        <div class="contenedor">
+            <img class="estrella" src="../imagenes/star-4-48.png" alt="estrella vacia" data-estado="apagada">
+            <img class="imagen" src="../imagenes/TaylorSwift1989.png" alt="foto portada cancion"
+            data-cancion='{"id":4, "nombreCancion":"karma", "nombreAlbum":"1989,Taylor_Version ", "duracionSeg":392, "src":"../imagenes/TaylorSwift1989.png"}'>
+        </div>
 
         <!-- segunda fila-->
+        <div class="contenedor">
+            <img class="estrella" src="../imagenes/star-4-48.png" alt="estrella vacia" data-estado="apagada">
+            <img class="imagen" src="../imagenes/daftPunk.jpg" alt="foto portada cancion"
+            data-cancion='{"id":5, "nombreCancion":"One more time", "nombreAlbum":"Discovery", "duracionSeg":313, "src":"../imagenes/daftPunk.jpg"}'>
+        </div>
 
-        <img src="../imagenes/daftPunk.jpg" alt="foto portada cancion">
-        <img src="../imagenes/nevermind.webp" alt="foto portada cancion">
-        <img src="../imagenes/King_Crimson-In_The_Court_Of_The_Crimson_King-.jpg" alt="foto portada cancion">
+        <div class="contenedor">
+            <img class="estrella" src="../imagenes/star-4-48.png" alt="estrella vacia" data-estado="apagada">
+            <img class="imagen" src="../imagenes/nevermind.webp" alt="foto portada cancion"
+            data-cancion='{"id":6, "nombreCancion":"Smells Like Teen Spirit", "nombreAlbum":"Nevermind", "duracionSeg":261, "src":"../imagenes/nevermind.webp"}'>
+        </div>
 
+        <div class="contenedor">
+            <img class="estrella" src="../imagenes/star-4-48.png" alt="estrella vacia" data-estado="apagada">
+            <img class="imagen" src="../imagenes/InTheCourtOfTheCrimsonKing.jpg" alt="foto portada cancion"
+            data-cancion='{"id":7, "nombreCancion":"In the Court of the Crimson King", "nombreAlbum":"In the Court of the Crimson King", "duracionSeg": 600, "src":"../imagenes/InTheCourtOfTheCrimsonKing.jpg"}'>
+        </div>
 
 
         <!-- tercera fila-->
-        <img src="../imagenes/liveAfterDeath.webp" alt="foto portada cancion">
-        <img src="../imagenes/The_Dark_Side_of_the_Moon_Cover.png" alt="foto portada cancion">
-        <img src="../imagenes/almendra.jpg" alt="foto portada cancion"> 
+        <div class="contenedor">
+            <img class="estrella" src="../imagenes/star-4-48.png" alt="estrella vacia" data-estado="apagada">
+            <img class="imagen" src="../imagenes/liveAfterDeath.webp" alt="foto portada cancion"
+            data-cancion='{"id":8, "nombreCancion":"The Trooper ", "nombreAlbum":"Live After Death", "duracionSeg":258, "src":"../imagenes/liveAfterDeath.webp"}'>
+        </div>
 
+        <div class="contenedor">
+            <img class="estrella" src="../imagenes/star-4-48.png" alt="estrella vacia" data-estado="apagada">
+            <img class="imagen" src="../imagenes/TheDarkSideoftheMoon.png" alt="foto portada cancion"
+            data-cancion='{"id":9, "nombreCancion":"Breathe", "nombreAlbum":"The Dark Side Of The Moon", "duracionSeg":270, "src":"../imagenes/TheDarkSideoftheMoon.png"}'>
+        </div>
+
+
+        <div class="contenedor">
+            <img class="estrella" src="../imagenes/star-4-48.png" alt="estrella vacia" data-estado="apagada">
+            <img class="imagen" src="../imagenes/almendra.jpg" alt="foto portada cancion"
+            data-cancion='{"id":10, "nombreCancion":"Color Humano", "nombreAlbum":"Almendra", "duracionSeg":546, "src":"../imagenes/almendra.jpg"}'>
+        </div>
             <!--
             <img src="../imagenes/Tyler-the-Creator-Flower-Boy.webp" alt="foto portada cancion">
             <img src="../imagenes/Tyler-the-Creator-Flower-Boy.webp" alt="foto portada cancion">
             <img src="../imagenes/Tyler-the-Creator-Flower-Boy.webp" alt="foto portada cancion"> 
             -->
     </main>
-
     <audio controls>
         <source src="../audio/WhatsApp Ptt 2023-09-19 at 11.31.12 AM.ogg" type="audio/ogg">
     </audio>
@@ -106,6 +126,7 @@
         <br>
         Ingresante 3 Franco Vargas, Ingresante 4 Valentin Melito
     </footer>
-
+    <script src="../js/favoritos.js"></script>
+    <script>barraBusqueda()</script>
 </body>
 </html>

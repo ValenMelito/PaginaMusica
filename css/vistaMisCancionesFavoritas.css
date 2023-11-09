@@ -148,7 +148,7 @@ footer{
   text-align: center;
   font-size: 20px;
   border: 5px black solid;
-  margin: 35px 35px;
+  margin: auto 35px;
   background-color: #fff;
 }
 
@@ -157,9 +157,9 @@ u{
 }
 
 
-.cuadricula {
+#cuadricula {
   display: grid;
-  grid-template-columns: 40px 1fr 1fr 100px 40px;
+  grid-template-columns: 40px 1fr 1fr 130px 40px;
   padding: 5px;
   background-color: rgba(79, 134, 244, 0.685);
   grid-column-gap: 2px;
@@ -189,17 +189,16 @@ u{
   background-color: rgb(235, 225, 244);
 }
 
-.cuadricula > div {
+#cuadricula > div {
   background-color: rgba(120, 240, 240, 0.555);
   padding: 10px;
 }
 
 .item2, .item3, .item4{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   font: bold 18px NuevaFuente
 }
 
-@font-face {
-  font-family: NuevaFuente;
-  src: url(./Fuente/NunitoSans-Italic-VariableFont_YTLC\,opsz\,wdth\,wght.ttf);
-}
 

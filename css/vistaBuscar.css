@@ -87,7 +87,7 @@ header{
 
 }
   
-.titulo{
+#titulo{
     margin-left: 15px;
     padding-left: 36px;
     font-size: 30px;
@@ -128,7 +128,7 @@ header{
     grid-area: fotoPerfil;
 }
 
-.canciones{ 
+#canciones{ 
     display: inline-grid;
     grid-template-columns: auto auto auto;
     justify-content: space-evenly;
@@ -158,10 +158,13 @@ header{
     margin-top: 7px;
 }
 
+.estrella:hover{
+    scale: 1.3;
+}
+
 img{
     height: 420px;
     width: 420px; 
-
 }
 
 audio{
