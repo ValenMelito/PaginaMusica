@@ -4,33 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/stylesInicio.css">
-    <script src="js/validaciones.js"></script>
     <title>Inicio</title>
 </head>
 <body>
     
     <main>
-        <form id="formu" action="#" method="POST">
+        <form action="#" method="POST" onsubmit="return entrar()">            
             <fieldset>
                 <legend>Reproductor de musica</legend>
-                    
                 <div>                    
                     <input id="usuario" name="usuario" placeholder="Usuario" type="text">
                 </div>
+                <div id="mensajeUsuario" class="error"></div> 
                 <br>
                 <div>
-                    <input id="password" name="password" placeholder="Contraseña" required type="password">
+                    <input id="password" name="password" placeholder="Contraseña" type="password">
                 </div>
-
+                <div id="mensajeContrasenia" class="error"></div>
                 <br><br>
-                <div class="center-text">
-                    <input id="enviar" value="Iniciar sesión" target="_parent" onclick="EnviarForm()" type="button" class="boton"/> 
-
-                </div>
+                    <button class="btn" type="submit">Iniciar sesión</button>
                 <br><br>
                 <button>
                     <a href="pages/vistaRegistrarse.html">Registrarme</a>
                 </button>
+                
             </fieldset>
         </form>
     </main>
@@ -40,6 +37,8 @@
         <br>
         Ingresante 3 Franco Vargas, Ingresante 4 Valentin Melito
     </footer>
+
+    <script type="text/javascript" src="javaScript/inicio.js"></script>
 
 </body>
 </html>

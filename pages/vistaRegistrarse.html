@@ -14,9 +14,9 @@
         
         </div>
 
-        <h3><a href="index.html">Iniciar sesion</a></h2>
+        <h3><a href="index.html">Iniciar sesion</a></h3>
 
-        <form action="" method="POST">
+        <form action="" method="POST" onsubmit="return valida_enviar()">
             <fieldset>
                 <legend>Registrar usuario</legend>
                     
@@ -24,28 +24,35 @@
 
                 <div>
                     <label for="usuario">Usuario</label>
-                    <input id="usuario" name="usuario" placeholder="Nombre de usuario" type="text">
+                    <input id="usuario" name="usuario"  placeholder="Nombre de usuario" type="text">
                 </div>
+                <div id="mensajeUsuario" class="error"></div> 
+
                 <br>
                 <div>
                     <label for="contrasena">Contraseña</label>
-                    <input id="contrasena" name="contrasena" required splaceholder="Contraseña"placeholder="Contraseña" type="password">
+                    <input id="contrasena" name="contrasena" placeholder="Contraseña"placeholder="Contraseña" type="password">
                 </div>
+                <div id="mensajeContrasenia" class="error"></div>
                 <br>
                 <div>
                     <label for="repetirContrasena">Repetir contraseña</label>
-                    <input id="repetirContrasena" name="repetirContrasena" required placeholder="Repetir contraseña" type="password">
+                    <input id="repetirContrasena" name="repetirContrasena"  placeholder="Repetir contraseña" type="password">
                 </div>
+                <div id="mensajeRepetirContrasenia" class="error"></div>
                 <br>
                 <div>
                     <label for="fechaNacimiento">Fecha de nacimiento</label>
                     <input id="fechaNacimiento" name="fechaNacimiento" placeholder="Fecha de nacimiento" type="date">
                 </div>
+                <div id="mensajeNac" class="error"></div>
                 <br>
                 <div>
                     <label for="email">E-mail</label>
                     <input id="email" name="email" placeholder="E-mail" type="email">
                 </div>
+                <div id="mensajeMail" class="error"></div>
+
                 <div class="center-text">
                     <a class="btn" href="vistaPremium.html">Premium</a>
                     <br>
@@ -69,6 +76,8 @@
         <br>
         Ingresante 3 Franco Vargas, Ingresante 4 Valentín Melito
     </footer>
+
+    <script type="text/javascript" src="../javaScript/registroUsuario.js"></script>
 
 </body>
 </html>
