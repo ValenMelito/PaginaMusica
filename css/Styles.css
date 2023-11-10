@@ -22,7 +22,7 @@
 
 nav{
     width: 80%;
-    margin: 0px auto;
+    margin: 0px auto 25px;
    /* border: 3px black solid;*/
 
     grid-area: menu;

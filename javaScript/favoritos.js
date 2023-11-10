@@ -29,11 +29,23 @@ var contenedores =document.querySelectorAll('.contenedor');
 
 contenedores.forEach(function(contenedor){
 
+
+var imagen= contenedor.querySelector('.imagen');
+imagen.addEventListener('click', function(){
+  let fotoRecomendada= document.querySelector('.cancionRecomendada');
+  console.log(fotoRecomendada);
+  fotoRecomendada.src=imagen.src;
+
+
+})
+
+
+
+
 var estrella =contenedor.querySelector('.estrella');
 //aprovecho el codigo y sacamos de aca todas las canciones
 informacionCancion=JSON.parse(contenedor.querySelector('.imagen').getAttribute('data-cancion'));
 todasLasCanciones.push(informacionCancion);
-
 let repetidoestrella=false;
    estrella.addEventListener('click', function(){
     let repetido=false;
