@@ -40,9 +40,7 @@ var contenedores =document.querySelectorAll('.contenedor');
 
 contenedores.forEach(function(contenedor){
 
-
-var imagen= contenedor.querySelector('.imagen');
-  
+var imagen= contenedor.querySelector('.imagen');  
   imagen.addEventListener('click', function(){
   localStorage.setItem("informacionImagen", imagen.getAttribute('data-cancion'));
   console.log(localStorage.getItem('informacionImagen'))
