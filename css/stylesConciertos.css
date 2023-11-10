@@ -30,10 +30,9 @@ main{
 nav{
     width: 80%;
     margin: 0px auto;
-   /* border: 3px black solid;*/
-
+    /* border: 3px black solid; */
     grid-area: menu;
-
+    display: flex;
     flex-direction: column;
 
 }

@@ -84,3 +84,16 @@ function valida_enviar(){
 
     //document.form.submit();
 }
+
+let actualizacionIRL = document.querySelector('#usuario');
+actualizacionIRL.addEventListener("keyup",()=>{
+    
+    var posicionNombreUsuario= document.querySelector('.posicionNombreUsuario');
+    var nombre=actualizacionIRL.value;
+    posicionNombreUsuario.textContent=nombre;
+if(actualizacionIRL.value==null){
+        console.log(nombre)
+        posicionNombreUsuario.textContent="nombre";
+    }
+
+})
