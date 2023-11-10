@@ -21,6 +21,17 @@ let favoritos=[
 
 
 
+function cambiarFoto(){
+  
+  fotoRecomendada= document.querySelector('.cancionRecomendada');
+  let informacionFoto=JSON.parse(localStorage.getItem('informacionImagen'));
+  fotoRecomendada.src=informacionFoto.src;
+}
+
+window.onload = cambiarFoto();
+
+
+
 let todasLasCanciones=[];
 let informacionCancion;
 let listaCancionesAgregadas=[];
@@ -31,11 +42,11 @@ contenedores.forEach(function(contenedor){
 
 
 var imagen= contenedor.querySelector('.imagen');
-imagen.addEventListener('click', function(){
-  let fotoRecomendada= document.querySelector('.cancionRecomendada');
-  console.log(fotoRecomendada);
-  fotoRecomendada.src=imagen.src;
-
+  
+  imagen.addEventListener('click', function(){
+  localStorage.setItem("informacionImagen", imagen.getAttribute('data-cancion'));
+  console.log(localStorage.getItem('informacionImagen'))
+  cambiarFoto();
 
 })
 
