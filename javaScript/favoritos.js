@@ -20,12 +20,12 @@ let favoritos=[
 ];
 
 
-
 function cambiarFoto(){
   
   fotoRecomendada= document.querySelector('.cancionRecomendada');
-  let informacionFoto=JSON.parse(localStorage.getItem('informacionImagen'));
-  fotoRecomendada.src=informacionFoto.src;
+  let informacionFoto=localStorage.getItem('informacionImagen');
+  console.log("esta es la informacion"+informacionFoto);
+  fotoRecomendada.src=informacionFoto;
 }
 
 window.onload = cambiarFoto();
@@ -42,7 +42,7 @@ contenedores.forEach(function(contenedor){
 
 var imagen= contenedor.querySelector('.imagen');  
   imagen.addEventListener('click', function(){
-  localStorage.setItem("informacionImagen", imagen.getAttribute('data-cancion'));
+  localStorage.setItem("informacionImagen", imagen.getAttribute('src'));
   console.log(localStorage.getItem('informacionImagen'))
   cambiarFoto();
 
@@ -257,7 +257,7 @@ let sentidoFlecha="inferior";
     mayorAMenor();
   }
 console.log(sentidoFlecha);
-//actualizacionGrilla(); no me funciona que se actualice
+actualizacionGrilla(); //no me funciona que se actualice
 console.log(favoritos);
   });  
 });
