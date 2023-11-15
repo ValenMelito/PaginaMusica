@@ -277,7 +277,8 @@ console.log(localStorage.getItem('sentidoFlecha'));
     flecha.textContent = "▲";
     menorAMayor();
     
-  }else{
+  }
+  if(sentidoFlecha=="▲"){
     flecha.textContent = "▼";
     mayorAMenor();
   }
