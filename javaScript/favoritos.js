@@ -107,7 +107,7 @@ array3=favoritos.concat((datos));
 console.log(array3);   
 favoritos=favoritos.concat(datos);
 
-
+            
     for(let i=0; i<favoritos.length; i++){
         let duracionMin=(favoritos[i].duracionSeg/60).toFixed();
         let duracionSegCalculo=favoritos[i].duracionSeg%60;
@@ -117,6 +117,8 @@ favoritos=favoritos.concat(datos);
         }
         //asi cargamos los datos como segundos y por medio de un calculo lo separamos
         let duracionTotal=duracionMin+":"+duracionSegCalculo;
+
+
 
             grilla.innerHTML+=
             `
@@ -150,9 +152,31 @@ favoritos=favoritos.concat(datos);
       }
 }
 
+
 function actualizacionGrilla(){
   let grilla = document.querySelector("#cuadricula");
-  grilla.innerHTML+='';
+  let direccionFlecha=localStorage.getItem('sentidoFlecha'); 
+  //console.log("aca estamos en actualizar"+sentidoFlecha);
+
+            grilla.innerHTML=
+            `
+            <!--el contenido de la primera fila-->
+            <div class="columna-play"></div>
+            <div class="item2">
+              <span>Canción</span>
+              <span class="ordenamiento">${direccionFlecha}</span>
+            </div>
+            <div class="item3">
+              <span>Álbum</span>
+              <span class="ordenamiento">${direccionFlecha}</span>
+            </div>
+            <div class="item4">
+              <span>Duración</span>
+              <span class="ordenamiento">${direccionFlecha}</span>
+            </div>
+            <div class="columna-favoritos"></div>
+            `
+            
   for(let i=0; i<favoritos.length; i++){
     let duracionMin=(favoritos[i].duracionSeg/60).toFixed();
     let duracionSegCalculo=favoritos[i].duracionSeg%60;
@@ -234,34 +258,38 @@ buscador.addEventListener("keyup",()=>{
 
 
 document.addEventListener("DOMContentLoaded", function() {
-var flechasOrdenamiento = document.querySelectorAll('.ordenamiento');
+let flechasOrdenamiento = document.querySelectorAll('.ordenamiento');
 
 //por cada flecha
 flechasOrdenamiento.forEach(function(flecha) {
  
-let sentidoFlecha="inferior";
-  
+
+let sentidoFlecha=flecha.textContent;
+localStorage.setItem('sentidoFlecha', flecha.textContent);
+console.log(localStorage.getItem('sentidoFlecha'));  
+
  //faltaria que al tocar cualquiera vaya variando y 
  //faltaria que cada flecha cumpla el ordenamiento que dice(duracion, nombre cancion y banda)
  flecha.addEventListener('click', function() {//hace el cambio de contenido ahora falta que varie 
-  
+  console.log("fui tocado")
   //analiza para que lado quiere estar el indicador
-  if(sentidoFlecha=="inferior"){
-    flecha.textContent = '▲';
-    sentidoFlecha="superior";
+  if(sentidoFlecha=="▼"){
+    flecha.textContent = "▲";
     menorAMayor();
     
   }else{
-    flecha.textContent = '▼';
-    sentidoFlecha="inferior";
+    flecha.textContent = "▼";
     mayorAMenor();
   }
-console.log(sentidoFlecha);
+  
+localStorage.setItem('sentidoFlecha', flecha.textContent);
+console.log("desde el localstorage"+localStorage.getItem('sentidoFlecha'));  
+
 actualizacionGrilla(); //no me funciona que se actualice
 console.log(favoritos);
-  });  
-});
+  })  
 })
+});
 
 /*
 var objetos = [
